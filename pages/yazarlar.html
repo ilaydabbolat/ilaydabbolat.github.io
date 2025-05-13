@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yazarlar | Kitap Dünyası</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .author-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .author-card {
+            background: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            transition: transform 0.3s ease;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        
+        .author-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .author-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .author-card h3 {
+            margin-top: 15px;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+            font-size: 1.4rem;
+        }
+        
+        .author-card p {
+            padding: 0 15px;
+            margin-bottom: 20px;
+            color: #666;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Kitap Dünyası</h1>
+            </div>
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Ana Sayfa</a></li>
+                    <li><a href="kategoriler.html">Kategoriler</a></li>
+                    <li><a href="yazarlar.html" class="active">Yazarlar</a></li>
+                    <li><a href="yeni-cikanlar.html">Yeni Çıkanlar</a></li>
+                    <li><a href="en-cok-satanlar.html">En Çok Satanlar</a></li>
+                    <li><a href="indirimler.html">İndirimler</a></li>
+                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                    <li><a href="kitap-oneri.html">Kitap Önerisi</a></li>
+                    <li><a href="kitap-bulma.html">Kitap Bulma</a></li>
+                    <li><a href="form-sonuc.html">Form Sonuçları</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="page-content">
+            <div class="container">
+                <h2 class="page-title">Ünlü Yazarlar</h2>
+                <p class="text-center">Edebiyat dünyasının önemli isimlerini keşfedin.</p>
+                
+                <div class="author-grid">
+                    <div class="author-card">
+                        <img src="../img/1.png" alt="Fyodor Dostoyevski">
+                        <h3>Fyodor Dostoyevski</h3>
+                        <p>Rus edebiyatının en önemli yazarlarından biri. İnsan psikolojisini derinlemesine inceleyen eserleriyle tanınır. "Suç ve Ceza" en bilinen eseridir.</p>
+                        <a href="#" class="btn">Kitaplarını Gör</a>
+                    </div>
+                    
+                    <div class="author-card">
+                        <img src="../img/2.png" alt="George Orwell">
+                        <h3>George Orwell</h3>
+                        <p>Distopik romanlarıyla tanınan İngiliz yazar. Toplumsal eleştiri içeren eserleriyle edebiyat dünyasında önemli bir yere sahiptir. "1984" adlı eseri dünya klasikleri arasındadır.</p>
+                        <a href="#" class="btn">Kitaplarını Gör</a>
+                    </div>
+                    
+                    <div class="author-card">
+                        <img src="../img/3.png" alt="Paulo Coelho">
+                        <h3>Paulo Coelho</h3>
+                        <p>Brezilyalı yazar, "Simyacı" adlı eseriyle dünya çapında üne kavuşmuştur. Kitapları 80'den fazla dile çevrilmiş ve milyonlarca satmıştır.</p>
+                        <a href="#" class="btn">Kitaplarını Gör</a>
+                    </div>
+                    
+                    <div class="author-card">
+                        <img src="../img/4.png" alt="Frank Herbert">
+                        <h3>Frank Herbert</h3>
+                        <p>Amerikalı bilim kurgu yazarı. "Dune" serisiyle tanınmaktadır. Eserleri bilim kurgu edebiyatının en önemli örnekleri arasında gösterilir.</p>
+                        <a href="#" class="btn">Kitaplarını Gör</a>
+                    </div>
+                    
+                    <div class="author-card">
+                        <img src="../img/5.png" alt="J.R.R. Tolkien">
+                        <h3>J.R.R. Tolkien</h3>
+                        <p>İngiliz yazar, şair ve filolog. "Yüzüklerin Efendisi" ve "Hobbit" gibi eserleriyle fantastik edebiyatın öncüsü kabul edilir.</p>
+                        <a href="#" class="btn">Kitaplarını Gör</a>
+                    </div>
+                    
+                    <div class="author-card">
+                        <img src="../img/6.png" alt="Yuval Noah Harari">
+                        <h3>Yuval Noah Harari</h3>
+                        <p>İsrailli tarihçi ve yazar. "Sapiens: İnsan Türünün Kısa Bir Tarihi" adlı kitabıyla dünya çapında tanınmıştır. İnsanlık tarihi ve geleceği üzerine çalışmalarıyla bilinir.</p>
+                        <a href="#" class="btn">Kitaplarını Gör</a>
+                    </div>
+                    
+                    <div class="author-card">
+                        <img src="../img/7.png" alt="James Clear">
+                        <h3>James Clear</h3>
+                        <p>Amerikalı yazar ve girişimci. "Atomik Alışkanlıklar" kitabıyla tanınmaktadır. Alışkanlık oluşturma ve kişisel gelişim konularında uzmanlaşmıştır.</p>
+                        <a href="#" class="btn">Kitaplarını Gör</a>
+                    </div>
+                    
+                    <div class="author-card">
+                        <img src="../img/8.png" alt="Antoine de Saint-Exupéry">
+                        <h3>Antoine de Saint-Exupéry</h3>
+                        <p>Fransız yazar, şair ve havacı. "Küçük Prens" adlı eseriyle dünya edebiyatının en sevilen yazarlarından biri haline gelmiştir. Eserleri çocuklar ve yetişkinler tarafından beğeniyle okunmaktadır.</p>
+                        <a href="#" class="btn">Kitaplarını Gör</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>Kitap Dünyası</h3>
+                    <p>En kaliteli kitapları en uygun fiyatlarla sizlere sunuyoruz.</p>
+                    <div class="contact">
+                        <span><i class="fas fa-phone"></i> &nbsp; 0212 123 45 67</span>
+                        <span><i class="fas fa-envelope"></i> &nbsp; iletisim@kitapdunyasi.com</span>
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h3>Hızlı Linkler</h3>
+                    <ul>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                        <li><a href="sss.html">SSS</a></li>
+                        <li><a href="gizlilik.html">Gizlilik Politikası</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact-form">
+                    <h3>Bültenimize Abone Olun</h3>
+                    <form action="../index.html" method="post">
+                        <input type="email" name="email" class="text-input contact-input" placeholder="E-posta adresiniz...">
+                        <button type="submit" class="btn btn-primary">Abone Ol</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2023 Kitap Dünyası | Tüm Hakları Saklıdır
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts/myscript.js"></script>
+</body>
+</html> 

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda | Kitap Dünyası</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .about-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .about-image {
+            border-radius: var(--border-radius);
+            overflow: hidden;
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .about-content h3 {
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+        
+        .about-content p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .stat-item {
+            background-color: var(--light-color);
+            padding: 20px;
+            border-radius: var(--border-radius);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .stat-text {
+            font-size: 1rem;
+            color: var(--secondary-color);
+        }
+        
+        .team {
+            margin-top: 40px;
+        }
+        
+        .team h3 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: var(--secondary-color);
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .team-member {
+            background: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        
+        .team-member img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .team-member h4 {
+            margin: 15px 0 5px;
+        }
+        
+        .team-member p {
+            color: #777;
+            margin-bottom: 15px;
+        }
+        
+        .team-member .social {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .team-member .social a {
+            width: 35px;
+            height: 35px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .team-member .social a:hover {
+            background-color: var(--accent-color);
+        }
+        
+        @media (max-width: 768px) {
+            .about-section {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .stats {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Kitap Dünyası</h1>
+            </div>
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Ana Sayfa</a></li>
+                    <li><a href="kategoriler.html">Kategoriler</a></li>
+                    <li><a href="yazarlar.html">Yazarlar</a></li>
+                    <li><a href="yeni-cikanlar.html">Yeni Çıkanlar</a></li>
+                    <li><a href="en-cok-satanlar.html">En Çok Satanlar</a></li>
+                    <li><a href="indirimler.html">İndirimler</a></li>
+                    <li><a href="hakkimizda.html" class="active">Hakkımızda</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                    <li><a href="kitap-oneri.html">Kitap Önerisi</a></li>
+                    <li><a href="kitap-bulma.html">Kitap Bulma</a></li>
+                    <li><a href="form-sonuc.html">Form Sonuçları</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="page-content">
+            <div class="container">
+                <h2 class="page-title">Hakkımızda</h2>
+                
+                <div class="about-section">
+                    <div class="about-image">
+                        <img src="../img/about-us.jpg" alt="Kitap Dünyası Mağazası">
+                    </div>
+                    <div class="about-content">
+                        <h3>Kitap Dünyası'na Hoş Geldiniz</h3>
+                        <p>2010 yılında kurulan Kitap Dünyası, Türkiye'nin en büyük online kitap satış platformlarından biridir. Misyonumuz, kaliteli kitapları uygun fiyatlarla okuyuculara ulaştırmak ve okuma kültürünü yaygınlaştırmaktır.</p>
+                        <p>Geniş kitap kataloğumuzla her yaştan ve her ilgi alanından okuyucuya hitap ediyoruz. Klasik edebiyat eserlerinden güncel bestsellerlere, akademik yayınlardan çocuk kitaplarına kadar binlerce kitabı bünyemizde bulunduruyoruz.</p>
+                        <p>Müşteri memnuniyetini ön planda tutarak, hızlı teslimat ve güvenilir alışveriş deneyimi sunmayı hedefliyoruz. Ayrıca düzenlediğimiz imza günleri, söyleşiler ve okuma etkinlikleriyle edebiyat dünyasına katkı sağlamaya çalışıyoruz.</p>
+                    </div>
+                </div>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-number">50.000+</div>
+                        <div class="stat-text">Kitap Çeşidi</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">1.000+</div>
+                        <div class="stat-text">Yayınevi</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">500.000+</div>
+                        <div class="stat-text">Mutlu Müşteri</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">13</div>
+                        <div class="stat-text">Yıllık Deneyim</div>
+                    </div>
+                </div>
+                
+                <div class="about-section">
+                    <div class="about-content">
+                        <h3>Değerlerimiz</h3>
+                        <p><strong>Kalite:</strong> Sadece en kaliteli kitapları müşterilerimize sunuyoruz.</p>
+                        <p><strong>Erişilebilirlik:</strong> Herkesin kitaplara kolayca ulaşabilmesi için uygun fiyat politikası izliyoruz.</p>
+                        <p><strong>Çeşitlilik:</strong> Her zevke ve ilgi alanına hitap eden geniş bir kitap yelpazesi sunuyoruz.</p>
+                        <p><strong>Yenilikçilik:</strong> Teknolojik gelişmeleri takip ederek alışveriş deneyimini sürekli iyileştiriyoruz.</p>
+                        <p><strong>Toplumsal Sorumluluk:</strong> Okuma kültürünü yaygınlaştırmak için sosyal sorumluluk projeleri yürütüyoruz.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="../img/about-us2.jpg" alt="Kitap Dünyası Ekibi">
+                    </div>
+                </div>
+                
+                <div class="team">
+                    <h3>Ekibimiz</h3>
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <img src="../img/team1.jpg" alt="Ekip Üyesi 1">
+                            <h4>Ahmet Yılmaz</h4>
+                            <p>Kurucu & CEO</p>
+                            <div class="social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <img src="../img/team2.jpg" alt="Ekip Üyesi 2">
+                            <h4>Ayşe Demir</h4>
+                            <p>Editör</p>
+                            <div class="social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <img src="../img/team3.jpg" alt="Ekip Üyesi 3">
+                            <h4>Mehmet Kaya</h4>
+                            <p>Pazarlama Müdürü</p>
+                            <div class="social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <img src="../img/team4.jpg" alt="Ekip Üyesi 4">
+                            <h4>Zeynep Şahin</h4>
+                            <p>Müşteri İlişkileri</p>
+                            <div class="social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>Kitap Dünyası</h3>
+                    <p>En kaliteli kitapları en uygun fiyatlarla sizlere sunuyoruz.</p>
+                    <div class="contact">
+                        <span><i class="fas fa-phone"></i> &nbsp; 0212 123 45 67</span>
+                        <span><i class="fas fa-envelope"></i> &nbsp; iletisim@kitapdunyasi.com</span>
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h3>Hızlı Linkler</h3>
+                    <ul>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                        <li><a href="sss.html">SSS</a></li>
+                        <li><a href="gizlilik.html">Gizlilik Politikası</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact-form">
+                    <h3>Bültenimize Abone Olun</h3>
+                    <form action="../index.html" method="post">
+                        <input type="email" name="email" class="text-input contact-input" placeholder="E-posta adresiniz...">
+                        <button type="submit" class="btn btn-primary">Abone Ol</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2023 Kitap Dünyası | Tüm Hakları Saklıdır
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts/myscript.js"></script>
+</body>
+</html> 

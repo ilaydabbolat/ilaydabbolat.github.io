@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitap Önerisi | Kitap Dünyası</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Kitap Dünyası</h1>
+            </div>
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Ana Sayfa</a></li>
+                    <li><a href="kategoriler.html">Kategoriler</a></li>
+                    <li><a href="yazarlar.html">Yazarlar</a></li>
+                    <li><a href="yeni-cikanlar.html">Yeni Çıkanlar</a></li>
+                    <li><a href="en-cok-satanlar.html">En Çok Satanlar</a></li>
+                    <li><a href="indirimler.html">İndirimler</a></li>
+                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                    <li><a href="kitap-oneri.html" class="active">Kitap Önerisi</a></li>
+                    <li><a href="kitap-bulma.html">Kitap Bulma</a></li>
+                    <li><a href="form-sonuc.html">Form Sonuçları</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="page-content">
+            <div class="container">
+                <h2 class="page-title">Kitap Önerisi Formu</h2>
+                <p class="text-center">Okuma alışkanlıklarınızı ve tercihlerinizi öğrenerek size özel kitaplar önerelim.</p>
+                
+                <div class="form-container">
+                    <form id="book-recommendation-form" action="form-sonuc.html" method="post">
+                        <div class="form-group">
+                            <label for="name">Ad Soyad</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-posta</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="age">Yaş</label>
+                            <input type="number" id="age" name="age" min="1" max="120" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Cinsiyet</label>
+                            <div class="radio-group">
+                                <label>
+                                    <input type="radio" name="gender" value="Erkek"> Erkek
+                                </label>
+                                <label>
+                                    <input type="radio" name="gender" value="Kadın"> Kadın
+                                </label>
+                                <label>
+                                    <input type="radio" name="gender" value="Diğer"> Diğer
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>İlgilendiğiniz Türler (Birden fazla seçebilirsiniz)</label>
+                            <div class="checkbox-group">
+                                <label>
+                                    <input type="checkbox" name="genres" value="Roman"> Roman
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="genres" value="Bilim Kurgu"> Bilim Kurgu
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="genres" value="Fantastik"> Fantastik
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="genres" value="Tarih"> Tarih
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="genres" value="Biyografi"> Biyografi
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="genres" value="Kişisel Gelişim"> Kişisel Gelişim
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="genres" value="Bilim"> Bilim
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="genres" value="Felsefe"> Felsefe
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="reading-frequency">Ne sıklıkla kitap okursunuz?</label>
+                            <select id="reading-frequency" name="reading-frequency" class="form-control" required>
+                                <option value="">Seçiniz</option>
+                                <option value="Her gün">Her gün</option>
+                                <option value="Haftada birkaç kez">Haftada birkaç kez</option>
+                                <option value="Ayda birkaç kitap">Ayda birkaç kitap</option>
+                                <option value="Yılda birkaç kitap">Yılda birkaç kitap</option>
+                                <option value="Nadiren">Nadiren</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="favorite-book">En sevdiğiniz kitap</label>
+                            <input type="text" id="favorite-book" name="favorite-book" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="comments">Eklemek istediğiniz notlar</label>
+                            <textarea id="comments" name="comments" class="form-control"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Gönder</button>
+                            <button type="reset" class="btn">Temizle</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>Kitap Dünyası</h3>
+                    <p>En kaliteli kitapları en uygun fiyatlarla sizlere sunuyoruz.</p>
+                    <div class="contact">
+                        <span><i class="fas fa-phone"></i> &nbsp; 0212 123 45 67</span>
+                        <span><i class="fas fa-envelope"></i> &nbsp; iletisim@kitapdunyasi.com</span>
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h3>Hızlı Linkler</h3>
+                    <ul>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                        <li><a href="sss.html">SSS</a></li>
+                        <li><a href="gizlilik.html">Gizlilik Politikası</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact-form">
+                    <h3>Bültenimize Abone Olun</h3>
+                    <form action="../index.html" method="post">
+                        <input type="email" name="email" class="text-input contact-input" placeholder="E-posta adresiniz...">
+                        <button type="submit" class="btn btn-primary">Abone Ol</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2023 Kitap Dünyası | Tüm Hakları Saklıdır
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts/myscript.js"></script>
+</body>
+</html> 
